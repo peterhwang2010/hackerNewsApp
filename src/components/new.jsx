@@ -1,5 +1,5 @@
 var React = require('react');
-var header = require('./header');
+var Header = require('./header');
 
 module.exports = React.createClass({
 	render: function(){

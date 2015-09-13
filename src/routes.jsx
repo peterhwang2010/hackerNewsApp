@@ -13,13 +13,12 @@ var Submit = require('./components/submit');
 
 module.exports = (
 	<Router history={new HashHistory}>
-		<Route path='/' component={Main}>
-			<Route path='new/' component={New} />
-			<Route path='comments/' component={Comments} />
-			<Route path='show/' component={Show} />
-			<Route path='ask/' component={Ask} />
-			<Route path='jobs/' component={Jobs} />
-			<Route path='submit/' component={Submit} />
-		</Route>
+		<Route path='/' component={Main} />
+		<Route path='new/' component={New} />
+		<Route path='comments/' component={Comments} />
+		<Route path='show/' component={Show} />
+		<Route path='ask/' component={Ask} />
+		<Route path='jobs/' component={Jobs} />
+		<Route path='submit/' component={Submit} />
 	</Router> 
 )
