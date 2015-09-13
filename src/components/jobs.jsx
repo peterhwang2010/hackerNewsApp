@@ -1,11 +1,11 @@
 var React = require('react');
-var Header = require('./header');
+var header = require('./header');
 
 module.exports = React.createClass({
 	render: function(){
 		return <div>
 			<Header />
-			I am a main page
+			I am jobs page 
 		</div>
 	}
 });
