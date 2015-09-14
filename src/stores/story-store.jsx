@@ -4,8 +4,8 @@ var Actions = require('../actions');
 
 module.exports = Reflux.createStore({
 	listenables: [Actions],
-	getNewStory: function(){
-		Api.get('newstories')
+	getNewStory: function(id){
+		Api.get('item/' + id)
 			.then(function(json){
 				this.storyId = json
 				this.triggerChange();
