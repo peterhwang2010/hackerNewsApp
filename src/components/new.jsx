@@ -1,6 +1,7 @@
 var React = require('react');
 var Reflux = require('reflux');
 var Header = require('./header');
+var NewStory = require('./new-story');
 var ItemStore = require('../stores/item-store');
 var Actions = require('../actions');
 var ReactRouter = require('react-router');
@@ -24,7 +25,6 @@ module.exports = React.createClass({
 				<div className="list-group">
 					{this.renderNewStories()}
 				</div>
-			// this.state['storyId'] returns an array of new stories.  
 		</div>
 	},
 	renderNewStories: function(){
